@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><!--remix-island-start--><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/assets/root-CyemtvO1.css"/><link rel="stylesheet" href="/assets/LegacyIconButton-apN2LHcc.css"/><link rel="icon" href="/static/favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="/assets/ReactToastify-Bh76j7cs.css"/><link rel="stylesheet" href="/assets/tailwind-compat-Bwh-BmjE.css"/><link rel="stylesheet" href="/assets/index-DO_2styS.css"/><link rel="stylesheet" href="/assets/xterm-LZoznX6r.css"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"/><link rel="stylesheet" href="/assets/figma-M4SY-zv3.css"/><script>(function createWorkaroundGlobal() {
+  window["__name"] = () => {
+  };
+})();</script><script>(function blockDOMMutations() {
+  const observer = new MutationObserver((mutations) => {
+    observer.disconnect();
+    mutations.reverse().forEach((mutation) => {
+      if (mutation.type === "childList") {
+        mutation.addedNodes.forEach((node) => {
+          if ([document.head, document.body, document.documentElement].includes(node.parentNode)) {
+            return;
+          }
+          if (node.parentNode) {
+            node.parentNode.removeChild(node);
+          }
+        });
+        mutation.removedNodes.forEach((node) => {
+          if (mutation.previousSibling) {
+            mutation.target.insertBefore(node, mutation.previousSibling.nextSibling);
+          } else if (mutation.target) {
+            mutation.target.appendChild(node);
+          }
+        });
+      }
+      if (mutation.type === "attributes") {
+        const { target, attributeName, oldValue } = mutation;
+        if (attributeName) {
+          if (oldValue === null) {
+            target.removeAttribute(attributeName);
+          } else {
+            target.setAttribute(attributeName, oldValue);
+          }
+        }
+      }
+      if (mutation.type === "characterData") {
+        mutation.target.data = mutation.oldValue ?? "";
+      }
+    });
+    observe();
+  });
+  function observe() {
+    observer.observe(document, {
+      subtree: true,
+      childList: true,
+      attributes: true,
+      attributeOldValue: true,
+      characterData: true,
+      characterDataOldValue: true
+    });
+  }
+  __name(observe, "observe");
+  window.addEventListener("DOMContentLoaded", observe);
+  window.__allowDOMMutations = () => {
+    observer.disconnect();
+  };
+})();</script><script>(function themeCode(storageKey, defaultTheme) {
+  if (window.location.pathname !== "/figma") {
+    setBoltTheme();
+  }
+  function setBoltTheme() {
+    const htmlElement = document.querySelector("html");
+    const localTheme = localStorage.getItem(storageKey);
+    const metaElement = document.querySelector("meta[name=bolt-theme]");
+    let theme = metaElement?.content ?? localTheme ?? defaultTheme;
+    htmlElement.setAttribute("data-theme-option", theme);
+    if (theme === "system") {
+      const prefersDark2 = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      theme = prefersDark2 ? "dark" : "light";
+    }
+    htmlElement.setAttribute("data-theme", theme);
+  }
+  __name(setBoltTheme, "setBoltTheme");
+})("bolt_theme", "dark");</script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-58KJM59B');</script><!--remix-island-end--></head><body><div id="root" class="w-full h-full"><div class="bg-bolt-ds-surface bg-gradient-to-b from-[rgba(43,166,255,0.07)] via-50% to-[rgba(43,166,255,0)] overflow-hidden min-h-screen relative mx-auto"><header class="flex shrink-0 select-none selection-accent items-center bg-bolt-elements-background-depth-1 pl-5 pr-4 border-b h-[var(--header-height)] border-transparent"><div class="flex grow-1 basis-60 items-center gap-2 z-logo text-bolt-elements-textPrimary"><a href="/" class="text-2xl font-semibold text-accent flex items-center"><span class="i-bolt:logos-bolt?mask w-[46px] inline-block"></span></a></div><div class="flex-1 select-text px-4 text-sm text-center text-bolt-elements-textPrimary"></div></header><div class="relative -top-[54px] pt-[54px] z-10 mx-auto max-w-[780px]"><div class="absolute w-full h-[1000px] top-0 left-0 select-none z-0"></div><div class="border-x border-white/10"><section class="flex flex-col items-center justify-center pt-32 pb-16 relative"><div class="relative flex flex-col items-center gap-4 text-center px-4 mt-24"><img class="absolute -top-60" src="/static/marketing/figma/bolt-x-figma.svg" alt="Bolt X Figma"/><h1 class="text-5xl font-semibold text-white tracking-tight">Bring your design to life</h1><p class="text-base text-[#ffffffbf] max-w-[388px]">Every designer can now be an engineer by creating pages in Bolt in seconds.</p></div><div class="mt-12 w-full max-w-[576px] px-4"><div class="relative"><input placeholder="Paste your Figma frame url here" class="!bg-origin-border flex w-full rounded-lg border py-2 text-sm ring-offset-background file:border-0 !file:bg-transparent file:text-sm file:font-medium disabled:cursor-not-allowed disabled:opacity-50 _FigmaInput_bg0bs_1 border-bolt-elements-borderColor bg-bolt-elements-prompt-background h-12 px-4 transition-all duration-200 ease-in-out placeholder:text-white/30 placeholder:text-sm hover:bg-white/5" value=""/></div><div class="flex justify-center items-center"><a href="https://forum.figma.com/ask-the-community-7/i-want-to-get-a-link-to-a-specific-frame-not-for-the-whole-page-12180" class="transition inline-block mx-auto text-xs text-bolt-elements-text-secondary hover:text-white text-center mt-4 underline underline-offset-4">How to copy your frame url</a></div></div></section><section class="relative mt-8 mx-auto max-w-[786px] aspect-video"><span class="absolute top-0 w-[130%] h-px z-10 left-1/2 translate-x-[-50%] bg-gradient-to-r from-transparent via-white/10 to-transparent"></span><span class="absolute bottom-0 w-[130%] h-px z-10 left-1/2 translate-x-[-50%] bg-gradient-to-r from-transparent via-white/10 to-transparent"></span><div class="relative w-full h-full group"><video class="w-full h-full object-cover hidden" src="/static/marketing/figma/figma-announcement.mp4" playsinline=""></video><img class="w-full h-full object-cover block" alt="Video preview" src="/static/marketing/figma/figma-preview.png"/><div class="absolute inset-0 bg-[#00000099] backdrop-blur-[8.25px] block"></div><button class="flex items-center justify-center outline-accent-600 [&amp;:is(:disabled,.disabled)]:cursor-not-allowed [&amp;:is(:disabled,.disabled)]:opacity-60 text-sm [&amp;:not(:disabled,.disabled)]:hover:bg-bolt-elements-button-secondary-backgroundHover transition-colors absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/10 backdrop-blur-[2px] text-white rounded-full px-8 py-3 hover:bg-white/20 z-20 duration-200 opacity-100" data-state="closed">How does it work?<div class="i-ph:play-fill text-white text-lg ml-2"></div></button></div></section><section class="mt-16 w-full"><h2 class="text-xl text-center mb-8"><span class="text-[#ffffff99]">No frames available? </span><span class="font-medium text-white">Check these examples </span></h2><div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 border-white/10"><div class="flex flex-col odd:border-r even:border-l border-white/10"><div class="relative w-full bg-cover bg-center overflow-hidden"><img src="/static/marketing/figma/pricing.jpg" alt="Pricing page" class="w-full h-full object-cover"/></div><p class="text-sm font-medium text-white text-center py-2.5 border-b border-white/10">Pricing page</p><div class="flex border-b border-white/10"><a href="https://www.figma.com/design/5MFF7F4dCDweVkQ7oxD4mc/Bolt-X-Figma-examples?node-id=17-2345&amp;t=0VyXTHK1hUKhyb5T-4" target="_blank" rel="noopener noreferrer" class="bg-transparent flex-1 h-9 text-xs text-bolt-elements-text-secondary hover:text-bolt-elements-text-primary flex items-center justify-center border-r border-white/10 hover:bg-white/5 transition-colors"><img class="h-5 mr-1" alt="Figma" src="/static/marketing/figma/figma-icon.svg"/>Preview in Figma</a><a href="https://bolt.new/~/sb1-ausgn5tt" target="_blank" rel="noopener noreferrer" class="flex-1 h-9 text-xs text-bolt-elements-text-secondary hover:text-bolt-elements-text-primary flex items-center justify-center border-white/10 hover:bg-white/5 transition-colors"><img class="h-5 mr-1" alt="Bolt" src="/static/marketing/figma/bolt-icon.svg"/>Result in Bolt</a></div></div><div class="flex flex-col odd:border-r even:border-l border-white/10"><div class="relative w-full bg-cover bg-center overflow-hidden"><img src="/static/marketing/figma/dashboard.jpg" alt="Dashboard" class="w-full h-full object-cover"/></div><p class="text-sm font-medium text-white text-center py-2.5 border-b border-white/10">Dashboard</p><div class="flex border-b border-white/10"><a href="https://www.figma.com/design/5MFF7F4dCDweVkQ7oxD4mc/Bolt-X-Figma-examples?node-id=3-367&amp;t=0VyXTHK1hUKhyb5T-4" target="_blank" rel="noopener noreferrer" class="bg-transparent flex-1 h-9 text-xs text-bolt-elements-text-secondary hover:text-bolt-elements-text-primary flex items-center justify-center border-r border-white/10 hover:bg-white/5 transition-colors"><img class="h-5 mr-1" alt="Figma" src="/static/marketing/figma/figma-icon.svg"/>Preview in Figma</a><a href="https://bolt.new/~/sb1-lnsmt2em" target="_blank" rel="noopener noreferrer" class="flex-1 h-9 text-xs text-bolt-elements-text-secondary hover:text-bolt-elements-text-primary flex items-center justify-center border-white/10 hover:bg-white/5 transition-colors"><img class="h-5 mr-1" alt="Bolt" src="/static/marketing/figma/bolt-icon.svg"/>Result in Bolt</a></div></div><div class="flex flex-col odd:border-r even:border-l border-white/10"><div class="relative w-full bg-cover bg-center overflow-hidden"><img src="/static/marketing/figma/about.jpg" alt="About page" class="w-full h-full object-cover"/></div><p class="text-sm font-medium text-white text-center py-2.5 border-b border-white/10">About page</p><div class="flex border-b border-white/10"><a href="https://www.figma.com/design/5MFF7F4dCDweVkQ7oxD4mc/Bolt-X-Figma-examples?node-id=70-8217&amp;t=0VyXTHK1hUKhyb5T-4" target="_blank" rel="noopener noreferrer" class="bg-transparent flex-1 h-9 text-xs text-bolt-elements-text-secondary hover:text-bolt-elements-text-primary flex items-center justify-center border-r border-white/10 hover:bg-white/5 transition-colors"><img class="h-5 mr-1" alt="Figma" src="/static/marketing/figma/figma-icon.svg"/>Preview in Figma</a><a href="https://bolt.new/~/sb1-ste8zhqu" target="_blank" rel="noopener noreferrer" class="flex-1 h-9 text-xs text-bolt-elements-text-secondary hover:text-bolt-elements-text-primary flex items-center justify-center border-white/10 hover:bg-white/5 transition-colors"><img class="h-5 mr-1" alt="Bolt" src="/static/marketing/figma/bolt-icon.svg"/>Result in Bolt</a></div></div><div class="flex flex-col odd:border-r even:border-l border-white/10"><div class="relative w-full bg-cover bg-center overflow-hidden"><img src="/static/marketing/figma/landing.jpg" alt="Landing page" class="w-full h-full object-cover"/></div><p class="text-sm font-medium text-white text-center py-2.5 border-b border-white/10">Landing page</p><div class="flex border-b border-white/10"><a href="https://www.figma.com/design/5MFF7F4dCDweVkQ7oxD4mc/Bolt-X-Figma-examples?node-id=73-60734&amp;t=0VyXTHK1hUKhyb5T-4" target="_blank" rel="noopener noreferrer" class="bg-transparent flex-1 h-9 text-xs text-bolt-elements-text-secondary hover:text-bolt-elements-text-primary flex items-center justify-center border-r border-white/10 hover:bg-white/5 transition-colors"><img class="h-5 mr-1" alt="Figma" src="/static/marketing/figma/figma-icon.svg"/>Preview in Figma</a><a href="https://bolt.new/~/sb1-zopagg9z" target="_blank" rel="noopener noreferrer" class="flex-1 h-9 text-xs text-bolt-elements-text-secondary hover:text-bolt-elements-text-primary flex items-center justify-center border-white/10 hover:bg-white/5 transition-colors"><img class="h-5 mr-1" alt="Bolt" src="/static/marketing/figma/bolt-icon.svg"/>Result in Bolt</a></div></div></div></section><section class="mt-16 mx-auto max-w-[786px] px-4 relative border-b border-white/10"><div class="absolute w-full h-[210px] -top-[43px] left-0"><img alt="Figma" src="/static/marketing/figma/figma-gradient.svg"/></div><div class="relative z-10 flex flex-col items-center gap-2 py-16"><h2 class="text-xl font-medium text-white text-center">Find more examples on</h2><a href="https://www.figma.com/community/design-templates?editor_type=figma" target="_blank" class="flex items-center justify-center outline-accent-600 [&amp;:is(:disabled,.disabled)]:cursor-not-allowed [&amp;:is(:disabled,.disabled)]:opacity-60 px-3 py-1.5 text-sm bg-bolt-elements-button-secondary-background text-bolt-elements-button-secondary-text [&amp;:not(:disabled,.disabled)]:hover:bg-bolt-elements-button-secondary-backgroundHover transition rounded-full border-[#ffffff1a] backdrop-blur-[2px] [background:radial-gradient(50%_50%_at_83%_95%,rgba(10,207,131,0.08)_0%,rgba(10,207,131,0)_100%),radial-gradient(50%_50%_at_64%_106%,rgba(26,188,254,0.12)_0%,rgba(26,188,254,0)_100%),radial-gradient(50%_50%_at_38%_109%,rgba(162,89,255,0.2)_0%,rgba(162,89,255,0)_100%),radial-gradient(50%_50%_at_16%_100%,rgba(242,78,30,0.12)_0%,rgba(242,78,30,0)_100%)]" data-state="closed"><img class="h-5 mr-1" alt="Figma" src="/static/marketing/figma/figma-icon.svg"/><span class="text-xs text-bolt-elements-text-primary">Figma Community</span></a></div></section></div></div></div><script>((STORAGE_KEY2, restoreKey) => {
+    if (!window.history.state || !window.history.state.key) {
+      let key2 = Math.random().toString(32).slice(2);
+      window.history.replaceState({
+        key: key2
+      }, "");
+    }
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(STORAGE_KEY2) || "{}");
+      let storedY = positions[restoreKey || window.history.state.key];
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error3) {
+      console.error(error3);
+      sessionStorage.removeItem(STORAGE_KEY2);
+    }
+  })("positions", null)</script><link rel="modulepreload" href="/assets/manifest-ce1868fe.js"/><link rel="modulepreload" href="/assets/entry.client-CZ29WZ1i.js"/><link rel="modulepreload" href="/assets/components-BGyfFIvJ.js"/><link rel="modulepreload" href="/assets/appsignal.client-BT_kcSw1.js"/><link rel="modulepreload" href="/assets/constants-BKzXLqQM.js"/><link rel="modulepreload" href="/assets/LegacyIconButton-wU_WzN2N.js"/><link rel="modulepreload" href="/assets/react-toastify.esm-DRbKVQEF.js"/><link rel="modulepreload" href="/assets/ErrorBoundary-FXlHc0B6.js"/><link rel="modulepreload" href="/assets/chat-LM6PJXLb.js"/><link rel="modulepreload" href="/assets/stripIndent-BGhimKxr.js"/><link rel="modulepreload" href="/assets/oauth-BIgWBQj9.js"/><link rel="modulepreload" href="/assets/description-C0Z4pLsE.js"/><link rel="modulepreload" href="/assets/login-CMI0LQNV.js"/><link rel="modulepreload" href="/assets/token-Cmom3LQb.js"/><link rel="modulepreload" href="/assets/index-6Tx4pmSd.js"/><link rel="modulepreload" href="/assets/tslib.es6-ChmJQI-w.js"/><link rel="modulepreload" href="/assets/root-CObQa3_Q.js"/><link rel="modulepreload" href="/assets/ConnectToFigmaDialog-BFNivc8l.js"/><link rel="modulepreload" href="/assets/index-BbP3371Q.js"/><link rel="modulepreload" href="/assets/LegacyDialog-B_cr_kor.js"/><link rel="modulepreload" href="/assets/applicationManager-IvHxffnn.js"/><link rel="modulepreload" href="/assets/figma-4R-Ixxls.js"/><script>window.__remixContext = {"basename":"/","future":{"v3_fetcherPersist":true,"v3_relativeSplatPath":true,"v3_throwAbortReason":true,"v3_singleFetch":false,"v3_lazyRouteDiscovery":false,"unstable_optimizeDeps":false},"isSpaMode":false,"state":{"loaderData":{"root":{},"routes/figma":{"loggedIn":false}},"actionData":null,"errors":null}};</script><script type="module" async="">import "/assets/manifest-ce1868fe.js";
+import * as route0 from "/assets/root-CObQa3_Q.js";
+import * as route1 from "/assets/figma-4R-Ixxls.js";
+
+window.__remixRouteModules = {"root":route0,"routes/figma":route1};
+
+import("/assets/entry.client-CZ29WZ1i.js");</script></div></body></html>

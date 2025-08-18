@@ -1,123 +1,184 @@
-body {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ body {
     margin: auto;
     padding: 0;
     font-family: Arial, sans-serif;
-   
 }
-.nav{
+
+.nav {
    display: flex;
-  align-items: center;
-  padding: 15px 30px;
-  gap: 30px;
-  background-color: #fff;
-  flex-wrap: wrap;
+   align-items: center;
+   padding: 15px 30px;
+   gap: 30px;
+   background-color: #fff;
+   flex-wrap: wrap;
 }
-.logo{
+
+.logo {
     height: 60px;
 }
-.nav2{
+
+.nav2 {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
 
-.search-cantainer{
-     position: relative;
+.search-cantainer {
+    position: relative;
     width: 350px;
     top: -70px;
     margin-left: -850px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 10px;
-    
 }
 
-.search-icon{
-     position: absolute;
-  right: -30px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-  height: 25px;
+.search-icon {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    height: 25px;
 }
-.search-box{
- width: 100%;
-  padding: 10px 40px 10px 15px;
-  border-radius: 25px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+.search-box {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
     background-color: rgb(247, 246, 246);
     height: 20px;
-    
 }
- .content {
+
+.content {
    display: flex;
-    align-items: flex-start; 
-    /* height: 200px;             */
-    /* background: #f0f0f0; */
-    margin-left: 600px;
- 
+   align-items: flex-start; 
+   margin-left: 600px;
 }
+
 .a {
     display: flex;
     margin-top: -100px;
     margin-right: 60px;
     font-weight: bold;
     padding: -5px;
-    
-    
-  
 } 
-.b{
+
+.b {
     display: flex;
     margin-top: -100px;
     margin-left: 180px;
     padding: -10px;
     font-weight: bold;
+}
 
+.btn {
+    position: absolute;
+    top: 35px;
+    left: 1400px;
+    height: 40px;
+    padding: -30px;
+    width: 80px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
 }
-.btn{
-     position: absolute;
-      top: 35px;
-      left: 1400px;
-      height: 40px;
-      padding: -30px;
-      width: 80px;
-      background-color: black;
-      color: white;
-      border-radius: 20px;
-      font-weight: bold;
-}
-.h1{
+
+.h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    font-size:x;
+    font-size: x;
     text-align: center;
 }
-.p{
+
+.p {
     text-align: center;
 }
-.c{
+
+.c {
     padding: 30px;
 }
 
+@media screen and (max-width: 1024px) {
+   .content {
+      margin-left: 0;
+      justify-content: center;
+   }
+   .search-cantainer {
+      margin-left: 0;
+      top: 0;
+      width: 250px;
+   }
+   .btn {
+      position: relative;
+      left: 0;
+      margin-top: 10px;
+   }
+   .a, .b {
+      margin: 10px;
+   }
+}
 
+@media screen and (max-width: 768px) {
+   .nav {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   .search-cantainer {
+      width: 100%;
+      margin: 10px 0;
+      position: relative;
+      top: 0;
+   }
+   .btn {
+      width: 100%;
+      max-width: 200px;
+   }
+   .content {
+      flex-direction: column;
+      margin-left: 0;
+      align-items: center;
+   }
+   .a, .b {
+      margin: 5px 0;
+   }
+}
 
-
-
-
-
-
-
-    /* padding: 8px 16px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-left: 1400px;
-  padding-top: 10px;
-  margin-top: \ */
-
+@media screen and (max-width: 480px) {
+   .logo {
+      height: 40px;
+   }
+   .search-cantainer {
+      width: 100%;
+   }
+   .btn {
+      width: 100%;
+   }
+   .content {
+      flex-direction: column;
+      margin-left: 0;
+   }
+}
 
